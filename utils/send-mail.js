@@ -1,14 +1,18 @@
 const fs = require("fs/promises");
 const path = require("path");
 const nodemailer = require("nodemailer");
+require("dotenv").config();
+
+const user = process.env.MAILGUM_USER;
+const pass = process.env.MAILGUM_PASS;
 
 const transporter = nodemailer.createTransport({
   host: "smtp.mailgun.org",
   port: 465,
   secure: true,
   auth: {
-    user: "postmaster@sandbox2546b0e8c90644f1b4e02c1b4783e743.mailgun.org",
-    pass: "9e36b6587a3ee1fb87af8a6c147dbdb5-135a8d32-717873ff",
+    user,
+    pass,
   },
   tls: {
     rejectUnauthorized: false,
@@ -24,6 +28,9 @@ async function sendMail() {
     const imageContent = await fs.readFile(
       path.join(__dirname, "../", "assets", "tech.jpg")
     );
+
+    // const to = 'recipientmail@domain.com'
+    // const from = 'sendermail@domain.com'
 
     const mailOptions = {
       from: "no_reply@p-tech.com",
