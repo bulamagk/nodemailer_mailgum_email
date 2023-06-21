@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 0.9rem;
+        overflow-x: hidden;
+        background: linear-gradient(45deg, #faf8f8, #ffffff);
+        background-repeat: no-repeat;
+        min-height: 100dvh;
+      }
+
+      a {
+        color: white;
+        padding: 1em 3em;
+        background: #062b4e;
+        display: inline-block;
+        text-decoration: none;
+        margin-block: 2em;
+        outline: none;
+        border: none;
+        border-radius: 0.5em;
+      }
+
+      a:hover,
+      a:focus {
+        opacity: 0.7;
+      }
+
+      h1 {
+        margin-bottom: 0.2em;
+        font-size: clamp(1.8rem, 1.8rem + 2vw, 4rem);
+        color: rgb(22, 89, 145);
+      }
+
+      p {
+        margin-bottom: 1em;
+        font-size: clamp(1rem, 1rem + 0.7vw, 3rem);
+        color: #3a3636;
+      }
+
+      ul {
+        list-style: disc;
+        padding-left: 1em;
+      }
+
+      li {
+        color: #062b4e;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0.5em;
+      }
+
+      section:has(img) {
+        width: 100%;
+        min-height: 10vh;
+        margin: 2em 0;
+        background: rgb(45, 102, 189);
+        border-radius: 10px;
+      }
+
+      img {
+        mix-blend-mode: overlay;
+        width: 100%;
+      }
+
+      .container {
+        width: min(95%, 1200px);
+        margin-inline: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Thank you for choosing P-Tech</h1>
+        <p>
+          The best Tech Company in Garkida that got you covered in all major
+          aspects of Tech in Garkida
+        </p>
+      </header>
+      <section>
+        <p>Our Services</p>
+        <ul>
+          <li>Web Design and Development</li>
+          <li>Graphics Design</li>
+          <li>Software Installations</li>
+          <li>Computer Troubleshooting</li>
+          <li>Printing Services</li>
+          <li>Filling of Online Forms</li>
+        </ul>
+      </section>
+      <section>
+        <img
+          src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimageio.forbes.com%2Fspecials-images%2Fimageserve%2F61d52d4e3a76ed81ac034ea8%2FThe-10-Tech-Trends-That-Will-Transform-Our-World%2F960x0.jpg%3Fheight%3D399%26width%3D711%26fit%3Dbounds&tbnid=-Vk5IxeTcJumcM&vet=12ahUKEwiI4ISTjNT_AhWRrycCHUVXA3AQMygAegUIARDeAQ..i&imgrefurl=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fbernardmarr%2F2022%2F01%2F05%2Fthe-10-tech-trends-that-will-transform-our-world%2F&docid=Nd0OvPBQEXXbRM&w=709&h=399&q=tech&client=opera&ved=2ahUKEwiI4ISTjNT_AhWRrycCHUVXA3AQMygAegUIARDeAQ"
+          alt=""
+        />
+      </section>
+      <section>
+        <a href="#">Verify Email</a>
+        <a href="mailto:bulamagk@gmail.com">Mail Us</a>
+      </section>
+    </main>
+  </body>
+</html>
